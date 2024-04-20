@@ -38,8 +38,42 @@ Here are the steps for creating each project type in Eclipse along with the requ
    - Write your Spring configuration, controllers, services, etc.
 
 3. **Required Jar Files**:
-   - If you're using Maven, Gradle, or another dependency management system, you typically don't need to manually add jar files.
-   - The dependencies are managed in the project's build configuration file (`pom.xml` for Maven, `build.gradle` for Gradle).
-   - If you're not using a dependency management system, you'll need to manually add the required Spring jars to the build path similar to adding servlet-api.jar in the dynamic web project.
+   create the java project
+   add spring jar files
+   create the class
+   create the xml file to provide the values
+   create the test class
+
+   in.sp.beans
+      Structure.java
+   in.sp.main
+      Main.java
+
+   import org.springframework.context.ApplicationContext;
+   import org.springframework.context.support.ClassPathXmlApplicationContext;
+   import in.sp.beans.Structure;
+   class main
+   psvm(Str[]){
+   String loc = "/in/.../applicationContext.xml"
+   ApplicationContext ac = new ClassPathXmlApplicationContext(loc);
+   Structure s1 = [Structure]context.getBeans("stdId");
+   s1.display()
+   }
+   
+   in.sp.resources
+      applicationContext.xml
+   <?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="studentbean" class="com.javatpoint.Student">  
+<property name="name" value=""></property>  
+</bean>  
+  
+</beans>  
 
 These steps should help you set up each type of project in Eclipse with the necessary jar files. Let me know if you need more detailed instructions for any specific step!
