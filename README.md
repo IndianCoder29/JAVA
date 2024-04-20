@@ -40,7 +40,7 @@ Here are the steps for creating each project type in Eclipse along with the requ
    in.sp.main
       Main.java
 
-   import org.springframework.context.ApplicationContext;
+   '''import org.springframework.context.ApplicationContext;
    import org.springframework.context.support.ClassPathXmlApplicationContext;
    import in.sp.beans.Structure;
    class main
@@ -49,11 +49,11 @@ Here are the steps for creating each project type in Eclipse along with the requ
    ApplicationContext ac = new ClassPathXmlApplicationContext(loc);
    Structure s1 = [Structure]context.getBeans("stdId");
    s1.display()
-   }
+   }'''
    
    in.sp.resources
       applicationContext.xml
-   <?xml version="1.0" encoding="UTF-8"?>  
+   '''<?xml version="1.0" encoding="UTF-8"?>  
 <beans  
     xmlns="http://www.springframework.org/schema/beans"  
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
@@ -65,6 +65,6 @@ Here are the steps for creating each project type in Eclipse along with the requ
 <property name="name" value=""></property>  
 </bean>  
   
-</beans>  
+</beans>  '''
 
 These steps should help you set up each type of project in Eclipse with the necessary jar files. Let me know if you need more detailed instructions for any specific step!
