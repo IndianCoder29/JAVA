@@ -28,16 +28,7 @@ Here are the steps for creating each project type in Eclipse along with the requ
      - Click `Add External JARs...` and select the servlet-api.jar file.
 
 ### Spring Project:
-1. **Create Project**:
-   - There are different ways to create a Spring project, but one common approach is to use Spring Boot.
-   - Go to `File` -> `New` -> `Spring Starter Project`.
-   - Enter the project details and click `Next`.
-   - Select the dependencies you need (e.g., Web, Spring Boot DevTools) and click `Finish`.
-
-2. **Write Code**:
-   - Write your Spring configuration, controllers, services, etc.
-
-3. **Required Jar Files**:
+1. **Create Project &** **Required Files**:
    create the java project
    add spring jar files
    create the class
